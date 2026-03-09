@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO: Заголовок страницы — самый важный тег для поиска -->
+  <title>Покраска дома в Москве и Московской области — Мастер на дом</title>
+
+  <!-- SEO: Описание сайта — именно этот текст Google показывает под ссылкой в поиске -->
+  <meta name="description" content="Покраска дома, утепление, постройка лестниц и крыльца в Москве и Московской области. Мастер на дом — качественно, быстро, с гарантией. Звоните: 8-985-772-31-84" />
+
+  <!-- SEO: Ключевые слова (дополнительная подсказка для поисковиков) -->
+  <meta name="keywords" content="покраска дома Москва, покраска дома Московская область, утепление крыши, утепление стен, постройка лестниц, постройка крыльца, реставрация мебели, обшивка вагонкой, мастер на дом Москва" />
+
+  <!-- SEO: Говорим Google, что это главная версия страницы -->
+  <link rel="canonical" href="https://master-na-dom.ru/" />
+
+  <!-- Для красивого отображения в мессенджерах при отправке ссылки -->
+  <meta property="og:title" content="Покраска дома в Москве — Мастер на дом" />
+  <meta property="og:description" content="Покраска дома, утепление, лестницы, крыльцо в Москве и МО. Быстро и с гарантией." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+
+  <!-- Подключаем красивые иконки (бесплатно) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Подключаем красивый шрифт -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== ШАПКА САЙТА ========== -->
+  <header class="header">
+    <div class="container header__inner">
+      <div class="header__logo">
+        <span class="header__logo-icon">🏠</span>
+        <div>
+          <div class="header__logo-title">Мастер на дом</div>
+          <div class="header__logo-sub">Москва и Московская область</div>
+        </div>
+      </div>
+      <div class="header__contacts">
+        <a href="tel:+79857723184" class="header__phone">
+          <i class="fa-solid fa-phone"></i> 8-985-772-31-84
+        </a>
+        <a href="https://t.me/ProMasterNaDom_bot" target="_blank" class="header__tg">
+          <i class="fa-brands fa-telegram"></i> Написать боту
+        </a>
+      </div>
+      <!-- Кнопка меню для мобильных -->
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Мобильное меню -->
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#services" onclick="closeMenu()">Услуги</a>
+      <a href="#why" onclick="closeMenu()">Почему мы</a>
+      <a href="#how" onclick="closeMenu()">Как работаем</a>
+      <a href="#contact" onclick="closeMenu()">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- ========== ГЛАВНЫЙ БЛОК ========== -->
+  <section class="hero">
+    <div class="hero__bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <!-- H1 — САМЫЙ ГЛАВНЫЙ ЗАГОЛОВОК. Должен быть один на странице и содержать ключевую фразу -->
+        <h1 class="hero__title">
+          Покраска дома<br>
+          <span>в Москве и МО</span>
+        </h1>
+        <p class="hero__desc">
+          Делаем всё своими руками — покраска, утепление, лестницы, крыльцо, вагонка и многое другое.
+          Работаем по всей Москве и Московской области. Без посредников — приедет мастер.
+        </p>
+        <div class="hero__btns">
+          <a href="tel:+79857723184" class="btn btn--primary">
+            <i class="fa-solid fa-phone"></i> Позвонить мастеру
+          </a>
+          <a href="https://t.me/ProMasterNaDom_bot" target="_blank" class="btn btn--tg">
+            <i class="fa-brands fa-telegram"></i> Оставить заявку в боте
+          </a>
+        </div>
+        <div class="hero__badges">
+          <div class="badge"><i class="fa-solid fa-clock"></i> Выезд в день обращения</div>
+          <div class="badge"><i class="fa-solid fa-shield-halved"></i> Гарантия на работу</div>
+          <div class="badge"><i class="fa-solid fa-ruble-sign"></i> Честная цена</div>
+        </div>
+      </div>
+      <div class="hero__image">
+        <div class="hero__image-card">
+          <div class="hero__stat"><span>10+</span>лет опыта</div>
+          <div class="hero__stat"><span>500+</span>объектов</div>
+          <div class="hero__stat"><span>9</span>видов работ</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== УСЛУГИ ========== -->
+  <section class="services" id="services">
+    <div class="container">
+      <!-- H2 — заголовок второго уровня, тоже важен для SEO -->
+      <h2 class="section-title">Наши услуги в Москве и МО</h2>
+      <p class="section-sub">Выполняем все виды ремонтных и строительных работ по дому</p>
+
+      <div class="services__grid">
+
+        <div class="service-card">
+          <div class="service-card__icon" style="background:#fff3e0">🎨</div>
+          <!-- H3 — заголовок третьего уровня, поддерживает SEO -->
+          <h3>Покраска дома</h3>
+          <p>Покраска фасада снаружи и внутри, комнат, полов, труб. Используем качественные краски, работаем аккуратно.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon" style="background:#e8f5e9">🏠</div>
+          <h3>Утепление крыши</h3>
+          <p>Утепляем крышу изнутри и снаружи. Материалы: минвата, пенопласт, пенофол. Избавим от сквозняков и теплопотерь.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon" style="background:#e3f2fd">🧱</div>
+          <h3>Утепление полов и стен</h3>
+          <p>Утепление полов под стяжку и по лагам, стен изнутри и снаружи. Тихо, быстро, с уборкой после работы.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon" style="background:#fce4ec">🪵</div>
+          <h3>Постройка лестниц из дерева</h3>
+          <p>Делаем деревянные лестницы на второй этаж под ключ: проект, материалы, монтаж. Прочно и красиво.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon" style="background:#f3e5f5">🚪</div>
+          <h3>Постройка крыльца</h3>
+          <p>Строим крыльцо из дерева или бетона. С навесом или без. Любой размер и форма — под ваш дом.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon" style="background:#e0f2f1">🛋️</div>
+          <h3>Реставрация мебели</h3>
+          <p>Восстанавливаем старую мебель: шлифовка, покраска, замена фурнитуры. Мебель снова как новая.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon" style="background:#fff8e1">🔧</div>
+          <h3>Сборка мебели</h3>
+          <p>Собираем кухни, диваны, шкафы, стеллажи — любую покупную мебель. Быстро, ровно, надёжно.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon" style="background:#fbe9e7">🪜</div>
+          <h3>Сборка и разборка лестниц</h3>
+          <p>Соберём купленную лестницу или разберём старую. Работаем с любыми конструкциями.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon" style="background:#e8eaf6">🌲</div>
+          <h3>Обшивка вагонкой</h3>
+          <p>Обшиваем вагонкой стены, перегородки, беседки. Дерево придаёт уют и тепло любому пространству.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ПОЧЕМУ МЫ ========== -->
+  <section class="why" id="why">
+    <div class="container">
+      <h2 class="section-title section-title--light">Почему выбирают нас</h2>
+      <p class="section-sub section-sub--light">Работаем по Москве и Московской области с 2014 года</p>
+
+      <div class="why__grid">
+        <div class="why-card">
+          <div class="why-card__num">01</div>
+          <h3>Один звонок — мастер приедет</h3>
+          <p>Без перекупщиков и посредников. Вы звоните — приезжает живой мастер, смотрит, называет цену.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__num">02</div>
+          <h3>Честная цена без накруток</h3>
+          <p>Стоимость называем до начала работы. Цена не меняется в процессе. Никаких скрытых доплат.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__num">03</div>
+          <h3>Убираем за собой</h3>
+          <p>После работы делаем уборку. Вы получаете результат, а не строительный мусор.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__num">04</div>
+          <h3>Гарантия на все работы</h3>
+          <p>Если что-то пошло не так — вернёмся и исправим бесплатно. Работаем на репутацию.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== КАК РАБОТАЕМ ========== -->
+  <section class="how" id="how">
+    <div class="container">
+      <h2 class="section-title">Как мы работаем</h2>
+      <p class="section-sub">Всего 3 шага от звонка до результата</p>
+
+      <div class="how__steps">
+        <div class="how-step">
+          <div class="how-step__circle">1</div>
+          <div class="how-step__line"></div>
+          <h3>Заявка</h3>
+          <p>Позвоните или напишите в Telegram. Расскажите, что нужно сделать — ответим сразу.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-step__circle">2</div>
+          <div class="how-step__line"></div>
+          <h3>Замер и цена</h3>
+          <p>Мастер приедет в удобное время, посмотрит объём работы и назовёт точную стоимость.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-step__circle">3</div>
+          <div class="how-step__line how-step__line--none"></div>
+          <h3>Работа и результат</h3>
+          <p>Делаем всё аккуратно и в срок. Принимаете работу — платите. Всё просто.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== КОНТАКТЫ И ФОРМА ЗАЯВКИ ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title section-title--light">Оставьте заявку</h2>
+      <p class="section-sub section-sub--light">Перезвоним в течение 15 минут и ответим на все вопросы</p>
+
+      <div class="contact__inner">
+        <div class="contact__info">
+          <div class="contact__item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <div class="contact__label">Телефон</div>
+              <a href="tel:+79857723184" class="contact__value">8-985-772-31-84</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <i class="fa-brands fa-telegram"></i>
+            <div>
+              <div class="contact__label">Telegram-бот</div>
+              <a href="https://t.me/ProMasterNaDom_bot" target="_blank" class="contact__value">Оставить заявку</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <i class="fa-brands fa-telegram"></i>
+            <div>
+              <div class="contact__label">Наши работы</div>
+              <a href="https://t.me/+yyk77ZmZfKdkNzQ6" target="_blank" class="contact__value">Смотреть фото</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <div class="contact__label">Район работы</div>
+              <div class="contact__value">Москва и Московская область</div>
+            </div>
+          </div>
+          <div class="contact__item">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <div class="contact__label">Время работы</div>
+              <div class="contact__value">Пн–Сб с 10:00 до 21:00</div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm" onsubmit="sendForm(event)">
+          <h3>Быстрая заявка</h3>
+          <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" placeholder="Иван" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7-900-000-00-00" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Что нужно сделать?</label>
+            <select id="service" name="service">
+              <option value="">— Выберите услугу —</option>
+              <option>Покраска дома снаружи</option>
+              <option>Покраска комнат внутри</option>
+              <option>Покраска пола или труб</option>
+              <option>Утепление крыши</option>
+              <option>Утепление полов и стен</option>
+              <option>Постройка лестницы</option>
+              <option>Постройка крыльца</option>
+              <option>Реставрация мебели</option>
+              <option>Сборка мебели</option>
+              <option>Обшивка вагонкой</option>
+              <option>Другое</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <i class="fa-solid fa-paper-plane"></i> Отправить заявку
+          </button>
+          <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ПОДВАЛ ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>Мастер на дом</strong> — покраска дома и ремонтные работы в Москве и Московской области
+      </div>
+      <div class="footer__contacts">
+        <a href="tel:+79857723184">8-985-772-31-84</a>
+        <span>·</span>
+        <a href="https://t.me/ProMasterNaDom_bot" target="_blank">Telegram-бот</a>
+      </div>
+      <div class="footer__copy">© 2025 Мастер на дом. Все права защищены.</div>
+    </div>
+  </footer>
+
+  <!-- Всплывающее сообщение об успешной отправке формы -->
+  <div class="popup" id="popup">
+    <div class="popup__box">
+      <div class="popup__icon">✅</div>
+      <h3>Заявка принята!</h3>
+      <p>Мы перезвоним вам в течение 15 минут.</p>
+      <button onclick="closePopup()" class="btn btn--primary">Хорошо</button>
+    </div>
+  </div>
+
+  <script>
+// ============================================================
+// Мобильное меню — открыть/закрыть
+// ============================================================
+const burger = document.getElementById("burger");
+const mobileNav = document.getElementById("mobileNav");
+
+burger.addEventListener("click", () => {
+  mobileNav.classList.toggle("open");
+  burger.classList.toggle("open");
+});
+
+function closeMenu() {
+  mobileNav.classList.remove("open");
+  burger.classList.remove("open");
+}
+
+// ============================================================
+// Попап — закрыть
+// ============================================================
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+// ============================================================
+// Отправка формы в Telegram-бот
+// Заявка с сайта приходит администратору с пометкой "С сайта"
+// ============================================================
+async function sendForm(event) {
+  event.preventDefault();
+
+  const name    = document.getElementById("name").value.trim();
+  const phone   = document.getElementById("phone").value.trim();
+  const service = document.getElementById("service").value || "Не выбрана";
+
+  // Токен бота и ID администратора
+  const BOT_TOKEN = "7930459380:AAGPy6gmM4lS89WAtou6NXCDRrbWNgA8OM8";
+  const ADMIN_ID  = "418398682";
+  const MANAGER_CHAT_ID = "-1001234567890";
+
+  // Формируем красивое сообщение
+  const text =
+    "🔔 <b>НОВАЯ ЗАЯВКА С САЙТА</b>\n" +
+    "━━━━━━━━━━━━━━━━━━━━\n" +
+    "👤 <b>Имя:</b> " + name + "\n" +
+    "📱 <b>Телефон:</b> <code>" + phone + "</code>\n" +
+    "🛠 <b>Услуга:</b> " + service + "\n" +
+    "━━━━━━━━━━━━━━━━━━━━\n" +
+    "🌐 <b>Источник:</b> Форма на сайте promaster-na-dom.ru";
+
+  const btn = event.target.querySelector("button[type=submit]");
+  btn.disabled = true;
+  btn.textContent = "Отправляем...";
+
+  try {
+    // Отправляем в оба чата — администратору и менеджерам
+    const recipients = [ADMIN_ID, MANAGER_CHAT_ID];
+
+    let response;
+    for (const chat_id of recipients) {
+      response = await fetch(
+        "https://api.telegram.org/bot" + BOT_TOKEN + "/sendMessage",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            chat_id: chat_id,
+            text: text,
+            parse_mode: "HTML",
+          }),
+        }
+      );
+    }
+
+    const result = await response.json();
+
+    if (result.ok) {
+      // Успех — показываем попап и очищаем форму
+      document.getElementById("contactForm").reset();
+      document.getElementById("popup").style.display = "flex";
+    } else {
+      alert("Ошибка отправки. Пожалуйста, позвоните нам напрямую.");
+    }
+  } catch (e) {
+    alert("Ошибка соединения. Пожалуйста, позвоните нам напрямую.");
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Отправить заявку';
+  }
+}
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106984156', 'ym');
+
+    ym(106984156, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/106984156" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>
